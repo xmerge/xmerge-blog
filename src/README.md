@@ -39,7 +39,23 @@ projects:
     desc: 自定义详细介绍
     link: https://你的自定义链接
 
+  - icon: /logo.svg
+    name: 自定义项目
+    desc: 自定义详细介绍
+    link: https://你的自定义链接
+    
+  - icon: /logo.svg
+    name: 自定义项目
+    desc: 自定义详细介绍
+    link: https://你的自定义链接
+    
+  - icon: /logo.svg
+    name: 自定义项目
+    desc: 自定义详细介绍
+    link: https://你的自定义链接
+
+
 footer: XYin's blog
 ---
 
-一个使用VuePress theme-hope搭建的博客网站
+XYin's 一个使用VuePress theme-hope搭建的博客网站

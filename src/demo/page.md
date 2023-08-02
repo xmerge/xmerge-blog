@@ -8,7 +8,7 @@ icon: file
 # 这是侧边栏的顺序
 order: 1
 # 设置作者
-author: Ms.Hope
+author: XYin
 # 设置写作时间
 date: 2020-01-01
 # 一个页面可以有多个分类
@@ -29,6 +29,7 @@ copyright: 无版权
 ---
 
 `more` 注释之前的内容被视为文章摘要。
+好的
 
 <!-- more -->
 
