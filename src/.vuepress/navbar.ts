@@ -9,14 +9,12 @@ export default navbar([
     prefix: "/posts/",
     children: [
       {
-        text: "苹果",
+        text: "front-end",
         icon: "pen-to-square",
-        prefix: "apple/",
+        prefix: "front-end/",
         children: [
-          { text: "苹果1", icon: "pen-to-square", link: "1" },
-          { text: "苹果2", icon: "pen-to-square", link: "2" },
-          "3",
-          "4",
+          { text: "vue3", icon: "pen-to-square", link: "vue" },
+          { text: "Typescript", icon: "pen-to-square", link: "typescript" },
         ],
       },
       {
@@ -34,8 +32,7 @@ export default navbar([
             icon: "pen-to-square",
             link: "2",
           },
-          "3",
-          "4",
+
         ],
       },
       { text: "樱桃", icon: "pen-to-square", link: "cherry" },
