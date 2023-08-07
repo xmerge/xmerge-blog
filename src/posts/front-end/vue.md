@@ -26,6 +26,7 @@ star: true
 ---
 
 这是一篇关于[`vue.js`](https://vuejs.org/)的学习笔记。
+本笔记不是完整的Vue.js学习教程，如需系统性学习，请移步[官网文档](https://cn.vuejs.org/guide/essentials/reactivity-fundamentals.html#ref)或其它教程。
 > 这篇文章将全部使用Vue3，并按照Vue官方推荐的组合式API和setup语法糖🍬进行coding
 
 <!-- more -->
@@ -34,7 +35,7 @@ star: true
 
 Vue (发音为 /vjuː/，类似 view) 是一款用于构建用户界面的 JavaScript 框架。它基于标准 HTML、CSS 和 JavaScript 构建，并提供了一套声明式的、组件化的编程模型，帮助你高效地开发用户界面。无论是简单还是复杂的界面，Vue 都可以胜任。由于Vue2将于2023年末停止维护，本文章只介绍Vue3。
 
-::: tip Vue与React
+::: info Vue与React
 
 - 虽然主流的中国互联网大厂（BAT等）更多使用[React](https://react.dev/)，但Vue等学习曲线更低，更适合中小规模的前端开发，也更适合中国开发者学习和使用。
 - 美团、去哪儿等产品矩阵使用了Vue进行开发。
@@ -42,6 +43,8 @@ Vue (发音为 /vjuː/，类似 view) 是一款用于构建用户界面的 JavaS
 
 使用Vue3等框架之前，需要对HTML, CSS, JavaScript和Node.js有一定基础。在项目的实际开发中，还建议使用Typescript，实现更好的代码规范和代码提示。
 开发和部署时，还可能会用到WebPack和Vite等打包构建工具。
+
+考虑规范开发和代码提示，采用typescript开发中大型项目会减少代码错误率并提高效率，关于Vue3中使用组合式API和Typescript进行开发，参照[官方文档](https://cn.vuejs.org/guide/typescript/composition-api.html)进行，后文将默认采用。
 
 ## 2. 响应式入门
 
@@ -58,7 +61,7 @@ Vue (发音为 /vjuː/，类似 view) 是一款用于构建用户界面的 JavaS
 
 在Vue.js中,响应式具体工作原理是:
 
-1. 使用defineProperty或Proxy将数据对象转换成响应式的。
+1. 使用`defineProperty`或`Proxy`将数据对象转换成响应式的。
 2. 视图通过数据绑定连接到这些响应式变量上。
 3. 当变量变化时,触发`setter`更新视图。
 
@@ -100,7 +103,7 @@ const myRef = {
 
 ### ref进阶Tips
 
-::: info ref进阶Tips
+::: tip ref进阶Tips
 
 :::
 
@@ -116,17 +119,19 @@ const myRef = {
     }
     ```
 
-3. working on it...
+3. 动态生成ref与ref数组：
+
+    working on it...
+4. working on it...
 
 ### 使用reactive()
-
-`reactive()` 将深层地转换对象：当访问嵌套对象时，它们也会被 `reactive()` 包装。当 ref 的值是一个对象时，`ref()` 也会在内部调用它。与浅层 ref 类似，也有一个 `shallowReactive()` API 可以选择退出深层响应性。
 
 ```typescript
 import { reactive } from 'vue'
 const state = reactive({ count: 0 })
 ```
 
+`reactive()` 将深层地转换对象：当访问嵌套对象时，它们也会被 `reactive()` 包装。当 ref 的值是一个对象时，`ref()` 也会在内部调用它。与浅层 ref 类似，也有一个 `shallowReactive()` API 可以选择退出深层响应性。
 由于`reactive()`存在某些局限性，<u>**Vue官方建议使用 `ref()` 作为声明响应式状态的主要 API**</u>：
 
 ::: warning  reactive() 的局限性
@@ -142,4 +147,51 @@ const state = reactive({ count: 0 })
 1. 额外的ref解包细节（详情见[官网文档](https://cn.vuejs.org/guide/essentials/reactivity-fundamentals.html#ref-unwrapping-as-reactive-object-property)）
 2. working on it...
 
-## 3. 组件与组件间通信
+## 3. Vue特性
+
+Vue提供了很多方便开发者使用的特性，极大简化了前端开发流程（例如[响应式入门](#2-响应式入门)中提到的`ref()`）。除此之外，Vue还提供了计算属性、类与样式绑定和条件渲染、列表渲染、表单输入绑定等特性。这些特性上手容易，官方文档简明易懂，如需学习请直接移步至[官方文档](https://cn.vuejs.org/guide/introduction.html)。
+
+## 4. 组件与组件间通信
+
+组件允许我们将 UI 划分为独立的、可重用的部分，并且可以对每个部分进行单独的思考。在实际应用中，组件常常被组织成层层嵌套的树状结构：
+
+![aa](./img/components.png)
+
+本笔记使用构建步骤，并将Vue组件定义在单文件组件（SFC）中。
+
+### 组件注册
+
+- 全局注册
+
+  在使用单文件组件的情况下，可以通过如下方式注册组件：
+
+  ```typescript
+  import MyComponent from './App.vue'
+  app.component('MyComponent', MyComponent)
+  
+  // 也可以通过如下方式链式调用
+  app
+    .component('ComponentA', ComponentA)
+    .component('ComponentB', ComponentB)
+    .component('ComponentC', ComponentC)
+  ```
+
+  全局注册虽然方便，但存在以下几点问题：
+  1. 全局注册，但并没有被使用的组件无法在生产打包时被自动移除 (也叫“**tree-shaking**”)。如果你全局注册了一个组件，即使它并没有被实际使用，它仍然会出现在打包后的 JS 文件中。
+  2. 全局注册在大型项目中使项目的依赖关系变得不那么明确。在父组件中使用子组件时，不太容易定位子组件的实现。和使用过多的全局变量一样，这可能会影响应用长期的可维护性。  
+
+- 局部注册
+
+  ```typescript
+  <script setup>
+  import ComponentA from './ComponentA.vue'
+  </script>
+
+  <template>
+    <ComponentA />
+  </template>
+  ```
+
+  > 局部注册的组件在后代组件中并不可用
+  
+
