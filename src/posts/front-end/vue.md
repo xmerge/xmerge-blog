@@ -168,7 +168,7 @@ Vue提供了很多方便开发者使用的特性，极大简化了前端开发�
   ```typescript
   import MyComponent from './App.vue'
   app.component('MyComponent', MyComponent)
-  
+
   // 也可以通过如下方式链式调用
   app
     .component('ComponentA', ComponentA)
@@ -192,6 +192,52 @@ Vue提供了很多方便开发者使用的特性，极大简化了前端开发�
   </template>
   ```
 
-  > 局部注册的组件在后代组件中并不可用
+  > 局部注册的组件在后代组件（子组件的子组件等）中并不可用
   
+### Props
 
+> 通过Props，父组件可以将本组件内的变量传递给自组件。
+
+```typescript
+defineProps<{
+  title?: string // ?表示title是可选的
+  likes: number
+}>()
+```
+
+> 组件内定义Props时变量应使用camelCase形式，在父组件中向子组件传递Props时使用kebab-case形式，Vue会自动进行转包。
+
+```typescript
+// 子组件中Props定义
+defineProps<{ greetingMessage: string }>()
+// 父组件中传递
+<MyComponent greeting-message="hello" />
+```
+
+- 所有props遵循**单向绑定**原则。props会因父组件中数据更新而变化，但子组件不能更改props的值，props是<u>**只读**</u>的。
+
+要更改props的值，一般有如下两种情况：
+
+1. prop 被用于传入初始值；而子组件想在之后将其作为一个局部数据属性，使用`ref()`。
+
+    ```typescript
+    const props = defineProps(['initialCounter'])
+    // 计数器只是将 props.initialCounter 作为初始值
+    // 像下面这样做就使 prop 和后续更新无关了
+    const counter = ref(props.initialCounter)
+    ```
+
+2. 需要对传入的 prop 值做进一步的转换，使用`computed()`。
+
+    ```typescript
+    const props = defineProps(['size'])
+    // 该 prop 变更时计算属性也会自动更新
+    const normalizedSize = computed(() => props.size.trim().toLowerCase())
+    ```
+
+::: warning props是对象或数组时
+因为 JavaScript 的对象和数组是按引用传递的，所以在子组件中可以直接修改对象内部的值。
+在大多数场景下，子组件应该抛出一个事件来通知父组件做出改变。
+:::
+
+- Props校验
