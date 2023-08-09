@@ -73,7 +73,7 @@ Vue提供了两种声明响应式状态的方法：`ref`和`reactive`。简单�
 ref内部使用了Object.defineProperty的getter/setter，而reactive是通过Proxy实现响应式的。
 当尝试使用ref定义复杂对象类型时，ref内部也会利用响应式Proxy代理。
 
-### 使用ref()
+### 使用`ref()`
 
 ```typescript
 import { ref } from 'vue'
@@ -155,7 +155,7 @@ Vue提供了很多方便开发者使用的特性，极大简化了前端开发�
 
 组件允许我们将 UI 划分为独立的、可重用的部分，并且可以对每个部分进行单独的思考。在实际应用中，组件常常被组织成层层嵌套的树状结构：
 
-![aa](./img/components.png)
+![组件](./img/components.png)
 
 本笔记使用构建步骤，并将Vue组件定义在单文件组件（SFC）中。
 
