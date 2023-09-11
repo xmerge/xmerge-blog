@@ -10,14 +10,14 @@ export default hopeTheme({
 
   author: {
     name: "XYin",
-    url: "https://baidu.com",
+    url: "/",
   },
 
   iconAssets: "fontawesome-with-brands",
 
   logo: "/XYin(2).png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "https://github.com/zzzxyin",
 
   docsDir: "src",
 

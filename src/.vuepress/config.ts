@@ -12,8 +12,7 @@ export default defineUserConfig({
       'link', { rel: 'icon', href: '/XYin(2).png'}
     ]
   ],
-
-  theme,
+  theme
 
   // Enable it with pwa
   // shouldPrefetch: false,
