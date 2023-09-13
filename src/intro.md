@@ -17,7 +17,7 @@ cover: /assets/images/cover1.jpg
 
 ## 介绍页
 
-This is XYin's blog，这是XYin的个人博客，我将在这里分享代码学习过程、一些感悟与知识分享。
+This is Xmerge's blog，这是Xmerge的个人博客，我将在这里分享代码学习过程、一些感悟与知识分享。
 
 ## 个人简历
 

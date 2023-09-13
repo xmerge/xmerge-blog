@@ -1,7 +1,7 @@
 {
-  "name": "xyin-blog",
+  "name": "xmerge-blog",
   "version": "1.0.0",
-  "description": "xyin's blog",
+  "description": "xmerge's blog",
   "license": "mit",
   "type": "module",
   "scripts": {

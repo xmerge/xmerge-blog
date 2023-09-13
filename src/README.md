@@ -3,11 +3,11 @@ home: true
 layout: BlogHome
 icon: home
 title: 博客主页
-heroImage: /XYin(2).png
-heroText: XYin
+heroImage: /XmergeHero.png
+heroText: Xmerge
 bgImage: /assets/images/background.jpg
 heroFullScreen: true
-tagline: XYin's blog
+tagline: Xmerge's blog
 projects:
   - icon: project
     name: 项目1
@@ -55,7 +55,7 @@ projects:
     link: https://你的自定义链接
 
 
-footer: XYin's blog
+footer: Xmerge's blog
 ---
 
-XYin's 一个使用VuePress theme-hope搭建的博客网站
+Xmerge's blog, 一个使用VuePress theme-hope搭建的博客网站

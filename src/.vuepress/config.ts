@@ -5,11 +5,11 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "XYin's",
+  title: "Xmerge",
   description: "vuepress-theme-hope 的博客演示",
   head: [
     [
-      'link', { rel: 'icon', href: '/XYin(2).png'}
+      'link', { rel: 'icon', href: '/XmergeLogo.png'}
     ]
   ],
   theme

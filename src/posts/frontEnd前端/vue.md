@@ -8,7 +8,7 @@ icon: file
 # 这是侧边栏的顺序
 order: 2
 # 设置作者
-author: XYin
+author: Xmerge
 # 设置写作时间
 date: 2023-08-01
 # 一个页面可以有多个分类

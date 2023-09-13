@@ -1,14 +1,14 @@
 ---
 # 这是文章的标题
-title: JavaScript & Typescript
+title: React
 # 你可以自定义封面图片
-cover: /assets/images/background.jpg
+cover: assets/images/front-end/ReactHero.png
 # 这是页面的图标
 icon: file
 # 这是侧边栏的顺序
-order: 1
+order: 3
 # 设置作者
-author: XYin
+author: Xmerge
 # 设置写作时间
 date: 2020-01-01
 # 一个页面可以有多个分类

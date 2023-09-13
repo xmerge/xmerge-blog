@@ -9,15 +9,15 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "XYin",
+    name: "Xmerge",
     url: "/",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "/XYin(2).png",
+  logo: "/XmergeLogo.png",
 
-  repo: "https://github.com/zzzxyin",
+  repo: "https://github.com/xmerge",
 
   docsDir: "src",
 
