@@ -21,6 +21,10 @@ comment: false
 footer: false
 
 backtotop: false
+# 此页面会在文章列表置顶
+sticky: false
+# 此页面会出现在文章收藏中
+star: false
 ---
 
 你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。

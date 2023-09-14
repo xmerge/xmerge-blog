@@ -2,6 +2,10 @@
 title: 幻灯片页
 icon: person-chalkboard
 layout: Slide
+# 此页面会在文章列表置顶
+sticky: false
+# 此页面会出现在文章收藏中
+star: false
 ---
 
 <!-- markdownlint-disable MD024 MD033 MD051 -->
