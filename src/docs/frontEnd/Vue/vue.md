@@ -1,6 +1,6 @@
 ---
 # 这是文章的标题
-title: Vue
+title: Vue入门
 # 你可以自定义封面图片
 cover: assets/images/front-end/VueHero.png
 # 这是页面的图标

@@ -1,7 +1,7 @@
 ---
 title: 个人介绍
 icon: circle-info
-cover: /assets/images/cover1.jpg
+cover: /assets/images/background.jpg
 ---
 
 就读于电子科技大学计算机科学与工程（网络空间安全）学院，攻读计算机科学与技术专业硕士。
