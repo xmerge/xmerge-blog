@@ -29,6 +29,18 @@ export default sidebar({
       children: "structure",
     },
     {
+      text: "Linux学习笔记",
+      icon: "book",
+      prefix: "docs/linux",
+      children: "structure",
+    },
+    {
+      text: "Docker学习笔记",
+      icon: "book",
+      prefix: "docs/docker",
+      children: "structure",
+    },
+    {
       text: "算法学习笔记",
       icon: "book",
       prefix: "docs/algorithm",
