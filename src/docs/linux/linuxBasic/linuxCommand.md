@@ -147,3 +147,86 @@ working on it...
     常用参数：
     > `-p` 递归删除
       `-v` 显示执行过程
+
+7. **`mv` 命令**
+
+    `mv <选项> <源文件or目录> <目标文件or目录>`
+    移动或将文件夹改名
+
+    :::tip notes
+    当第二个参数是文件时，改名；当第二个参数是文件夹时，将源文件移动至目标目录
+    :::
+
+    常用参数：
+    > `-b` 若需覆盖文件，则覆盖前先行备份
+      `-f` force 强制的意思，如果目标文件已经存在，不会询问而直接覆盖
+      `-i` 若目标文件 (destination) 已经存在时，就会询问是否覆盖
+      `-u` 若目标文件已经存在，且 source 比较新，才会更新(update)
+      `-t` --target-directory=DIRECTORY move all SOURCE arguments into DIRECTORY，即指定mv的目标目录，该选项适用于移动多个源文件到一个目录的情况，此时目标目录在前，源文件在后
+
+    示例：
+    ```bash
+    # 将 test1.txt 重命名为 test2.txt
+    mv test1.txt test2.txt
+    # 移动文件 test1.txt 到目录 testdir
+    mv test1.txt testdir
+    # 移动多个文件
+    # mv test1.txt test2.txt testdir
+    ```
+
+8. **`cp` 命令**
+
+    `cp <选项> <源文件or目录> <目标文件or目录>`
+    复制命令
+
+    常用参数：
+    > `-b` 若需覆盖文件，则覆盖前先行备份
+      `-f` force 强制的意思，如果目标文件已经存在，不会询问而直接覆盖
+      `-i` 若目标文件 (destination) 已经存在时，就会询问是否覆盖
+      `-u` 若目标文件已经存在，且 source 比较新，才会更新(update)
+      `-t` --target-directory=DIRECTORY move all SOURCE arguments into DIRECTORY，即指定mv的目标目录，该选项适用于移动多个源文件到一个目录的情况，此时目标目录在前，源文件在后
+
+    示例：
+    ```bash
+    # 复制test1.txt到testdir
+    cp test1.txt testdir
+    # 复制test1目录到testdir目录
+    cp -a test1 testdir
+    ```
+
+9. **`touch` 命令**
+
+    `touch <选项> <文件>`
+    更改文档或目录到日期时间，或创建新文件
+
+    常用参数：
+    > `-a`or`--time=atime`or`--time=access`or`--time=use`  只更改存取时间
+      `-c`or`--no-create`  不建立任何文档
+      `-d` 使用指定的日期时间，而非现在的时间
+      `-f` 此参数将忽略不予处理，仅负责解决BSD版本touch指令的兼容性问题
+      `-m`or`--time=mtime`or`--time=modify`  只更改变动时间
+      `-r` 把指定文档或目录的日期时间，统统设成和参考文档或目录的日期时间相同 -t  使用指定的日期时间，而非现在的时间
+
+    示例：
+    ```bash
+    # 创建test.txt
+    touch test.txt
+    # 将test.txt的时间更新为和test1.txt相同
+    touch -r test.txt test1.txt
+    ```
+
+10. **`cat` 命令**
+
+    `cat <选项> <文件>`
+    显示文件内容，或将多个文件连接起来显示
+
+    常用参数：
+    > `-n`or`--number` 对输出的所有行编号,由1开始对所有输出的行数编号
+
+    示例：
+    ```bash
+    # 将test.log文件的内容加上行号后放进test1.log文件中
+    cat -n test.log test1.log
+    # 将test.log文件的内容反向显示
+    tac test.log
+    ```
