@@ -5,8 +5,9 @@ icon: home
 title: 博客主页
 heroImage: /XmergeHero.png
 heroText: Xmerge
-bgImage: /assets/images/background.jpg
-heroFullScreen: true
+# bgImage: /assets/images/background.jpg
+bgImage: /background.jpg
+heroFullScreen: false
 tagline: Xmerge's blog
 projects:
   # - icon: project
