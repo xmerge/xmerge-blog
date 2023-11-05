@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o,c as t,a as s}from"./app-d4c211ae.js";const c={},n=s("p",null,"Xmerge's blog, 一个使用VuePress theme-hope搭建的博客网站",-1),r=[n];function _(a,l){return o(),t("div",null,r)}const d=e(c,[["render",_],["__file","index.html.vue"]]);export{d as default};
