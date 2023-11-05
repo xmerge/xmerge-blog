@@ -123,3 +123,4 @@ sudo docker run -p -d 8888:8888 my-docker-app
 ## 3. 踩坑记录
 
 1. nginx配置目录
+
