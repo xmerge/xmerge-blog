@@ -124,4 +124,4 @@ sudo docker run -p -d 8888:8888 my-docker-app
 
 1. nginx配置目录
 
-2. 网站配置
+2. 网站配置测试
