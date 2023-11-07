@@ -10,6 +10,7 @@ bgImage: /background.jpg
 heroFullScreen: false
 tagline: Xmerge's blog
 projects:
+copyright: 蜀ICP备2023027182号
   # - icon: project
   #   name: 项目1
   #   desc: 项目详细描述
