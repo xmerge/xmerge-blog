@@ -1,8 +1,6 @@
 ---
 # 这是文章的标题
 title: 通过Docker部署个人主页
-# 你可以自定义封面图片
-cover: assets/images/docker/DockerHero.png
 # 这是页面的图标
 icon: file
 # 这是侧边栏的顺序

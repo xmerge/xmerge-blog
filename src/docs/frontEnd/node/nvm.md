@@ -1,8 +1,6 @@
 ---
 # 这是文章的标题
 title: nvm- node版本管理利器
-# 你可以自定义封面图片
-cover: assets/images/front-end/NvmHero.png
 # 这是页面的图标
 icon: file
 # 这是侧边栏的顺序

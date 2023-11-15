@@ -5,12 +5,10 @@ icon: home
 title: 博客主页
 heroImage: /XmergeHero.png
 heroText: Xmerge
-# bgImage: /assets/images/background.jpg
-bgImage: /background.jpg
-heroFullScreen: false
-tagline: Xmerge's blog
-projects:
+tagline: Xmerge's blog 🎨
+bgImage: /background.png
 copyright: 蜀ICP备2023027182号
+projects:
   # - icon: project
   #   name: 项目1
   #   desc: 项目详细描述
@@ -57,7 +55,7 @@ copyright: 蜀ICP备2023027182号
   #   link: https://你的自定义链接
 
 
-footer: Xmerge's blog
+footer: Xmerge's blog, powered by VuePress theme-hope
 ---
 
-Xmerge's blog, 一个使用VuePress theme-hope搭建的博客网站
+Xmerge's blog 🎨

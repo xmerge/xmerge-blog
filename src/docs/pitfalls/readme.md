@@ -1,5 +1,5 @@
 ---
-title: 算法学习笔记
+title: 踩坑日记
 article: false
 index: false
 icon: study
@@ -10,7 +10,6 @@ sticky: false
 # 此页面会出现在文章收藏中
 star: false
 ---
-
 
 ## 目录
 

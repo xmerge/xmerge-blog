@@ -1,8 +1,6 @@
 ---
 # 这是文章的标题
 title: 算法笔记-基础进阶
-# 你可以自定义封面图片
-cover: /assets/images/algorithm/AlgorithmHero.png
 # 这是页面的图标
 icon: file
 # 这是侧边栏的顺序

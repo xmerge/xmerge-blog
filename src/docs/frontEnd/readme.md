@@ -1,5 +1,6 @@
 ---
 title: 前端学习笔记
+article: false
 index: false
 icon: laptop-code
 category:

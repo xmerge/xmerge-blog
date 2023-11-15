@@ -1,8 +1,6 @@
 ---
 # 这是文章的标题
-title: Spring Boot入门与配置
-# 你可以自定义封面图片
-cover: /assets/images/back-end/SpringBootHero.png
+title: Spring Boot 入门
 # 这是页面的图标
 icon: file
 # 这是侧边栏的顺序
@@ -13,19 +11,16 @@ author: Xmerge
 date: 2023-09-13
 # 一个页面可以有多个分类
 category:
-  - backEnd
+  - Spring Boot
+  - Backend
 # 一个页面可以有多个标签
 tag:
-  - backEnd
-  - Spring
+  - Spring Boot
+  - Backend
 # 此页面会在文章列表置顶
 sticky: true
 # 此页面会出现在文章收藏中
 star: true
-# 你可以自定义页脚
-footer: Springboot
-# 你可以自定义版权信息
-copyright: Xmerge
 ---
 
 这是一篇关于[`Springboot`](https://spring.io/projects/spring-boot)的学习笔记。

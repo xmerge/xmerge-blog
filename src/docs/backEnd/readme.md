@@ -1,7 +1,8 @@
 ---
 title: 后端学习笔记
+article: false
 index: false
-icon: laptop-code
+icon: home
 category:
   - 使用指南
 # 此页面会在文章列表置顶

@@ -1,8 +1,6 @@
 ---
 # 这是文章的标题
 title: 初识Linux
-# 你可以自定义封面图片
-cover: assets/images/front-end/JSHero.png
 # 这是页面的图标
 icon: file
 # 这是侧边栏的顺序
