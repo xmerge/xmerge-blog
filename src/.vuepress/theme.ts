@@ -25,7 +25,12 @@ export default hopeTheme({
   navbar,
 
   // sidebar
-  sidebar,
+  sidebar: {
+    "/docs/algorithm/": "structure",
+    "/docs/frontEnd/": "structure",
+    "/docs/backEnd/": "structure",
+    "/docs/pitfalls/": "structure",
+  },
 
   footer: "默认页脚",
 

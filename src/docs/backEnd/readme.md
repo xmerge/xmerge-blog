@@ -2,7 +2,7 @@
 title: 后端学习笔记
 article: false
 index: false
-icon: home
+icon: laptop-code
 category:
   - 使用指南
 # 此页面会在文章列表置顶
@@ -11,6 +11,5 @@ sticky: false
 star: false
 ---
 
-## 目录
 
-working on it...
+<AutoCatalog/>

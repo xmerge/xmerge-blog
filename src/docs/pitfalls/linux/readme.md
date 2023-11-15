@@ -1,5 +1,5 @@
 ---
-title: Linux学习笔记
+title: Linux
 article: false
 index: false
 icon: laptop-code
@@ -11,6 +11,4 @@ sticky: false
 star: false
 ---
 
-## 目录
-
-working on it...
+<AutoCatalog/>
