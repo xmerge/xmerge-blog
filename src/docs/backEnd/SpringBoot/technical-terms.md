@@ -42,7 +42,6 @@ Servlet是Java的一个规范，用于开发基于Java的Web应用程序。它�
 
 Tomcat是Apache软件基金会开发和维护的一个开源的Java Servlet容器。它提供了一个运行Java Web应用程序的环境，支持Servlet和JavaServer Pages (JSP) 技术。Tomcat是一个轻量级的容器，可以独立运行，也可以与其他服务器（如Apache HTTP服务器）进行集成。
 
-
 ### 3. ~~**JSP**(JavaServer Pages)~~
 
 JSP（JavaServer Pages）是一种用于开发动态Web页面的Java技术。它允许将Java代码嵌入到HTML页面中，以实现动态内容的生成和展示。JSP是基于Servlet技术的扩展，它使用了类似于HTML的标记语法，同时可以在其中嵌入Java代码片段。
