@@ -4,7 +4,7 @@ title: Spring Boot CRUD环境搭建
 # 这是页面的图标
 icon: file
 # 这是侧边栏的顺序
-order: 3
+order: 5
 # 设置作者
 author: Xmerge
 # 设置写作时间
