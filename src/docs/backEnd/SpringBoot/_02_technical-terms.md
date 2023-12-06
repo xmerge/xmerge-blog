@@ -4,7 +4,7 @@ title: Spring技术名词汇总
 # 这是页面的图标
 icon: file
 # 这是侧边栏的顺序
-order: 2
+order: 3
 # 设置作者
 author: Xmerge
 # 设置写作时间

@@ -4,7 +4,7 @@ title: Spring Boot 入门
 # 这是页面的图标
 icon: file
 # 这是侧边栏的顺序
-order: 1
+order: 2
 # 设置作者
 author: Xmerge
 # 设置写作时间
