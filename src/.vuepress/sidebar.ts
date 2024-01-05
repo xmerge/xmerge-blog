@@ -2,7 +2,12 @@ import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
   "/": [
-    "",
+    {
+      text: "云票高并发抢票系统",
+      icon: "book",
+      prefix: "docs/yunpiao/",
+      children: "structure",
+    },
     {
       text: "后端学习笔记",
       icon: "book",

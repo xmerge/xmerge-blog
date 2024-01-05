@@ -26,6 +26,48 @@ export default hopeTheme({
 
   // sidebar
   sidebar: {
+    "/docs/yunpiao/": [
+      {
+        text: "写在前面",
+        icon: "book",
+        prefix: "basic",
+        children: "structure",
+        collapsible: false,
+      },
+      {
+        text: "框架搭建",
+        icon: "book",
+        prefix: "framework",
+        children: "structure",
+      },
+      {
+        text: "项目核心",
+        icon: "book",
+        prefix: "core",
+        children: "structure",
+      }
+    ],
+    "/docs/bagu/": [
+      {
+        text: "Java",
+        icon: "book",
+        prefix: "Java",
+        children: "structure",
+        collapsible: false,
+      },
+      {
+        text: "数据库",
+        icon: "book",
+        prefix: "database",
+        children: "structure",
+      },
+      {
+        text: "Spring",
+        icon: "book",
+        prefix: "spring",
+        children: "structure",
+      }
+    ],
     "/docs/algorithm/": "structure",
     "/docs/frontEnd/": "structure",
     "/docs/backEnd/": "structure",

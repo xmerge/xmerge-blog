@@ -23,20 +23,19 @@ sticky: true
 star: true
 ---
 
-这是一篇利用[`Springboot`]作为后端进行CRUD（增删查改）的基本框架搭建笔记。主要技术框架为Springboot、Mybatis、Mybatis-Plus、Druid、Swagger-UI(Spring fox)、Lombok等。
+这是一篇利用[`Springboot`]作为后端进行CRUD（增删查改）的基本框架搭建笔记。主要技术框架为Springboot、Mybatis、Druid、Swagger-UI(Spring fox)、Lombok等。
 本笔记针对`Springboot`版本为`2.7.17`进行编写。
 
 <!-- more -->
 
 ## 技术选型
 
-- Spring Boot: 版本`2.7.17`
-- JDK: 版本`17`
-- Mybatis: 版本`3.5.7`
-- Mybatis-Plus: 版本`3.4.3`
-- Druid: 版本`1.2.7`
-- Swagger-UI: 版本`3.52.5`
-- Lombok: 版本`1.18.20`
+- Spring Boot: 版本 `2.7.17`
+- JDK: 版本 `17`
+- Mybatis: 版本 `3.5.7`
+- Druid: 版本 `1.2.7`
+- Swagger-UI: 版本 `3.52.5`
+- Lombok: 版本 `1.18.20`
 
 ## 项目结构
 
@@ -46,6 +45,5 @@ star: true
 │   ├── main
 │   │   ├── java
 │   │   │   └── com.example
+```>
 
-<!-- more -->
-```

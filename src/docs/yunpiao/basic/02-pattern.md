@@ -1,14 +1,14 @@
 ---
 # 这是文章的标题
-title: (Java)后端到底要干啥？
+title: 设计模式
 # 这是页面的图标
 icon: file
 # 这是侧边栏的顺序
-order: 1
+order: 2
 # 设置作者
 author: Xmerge
 # 设置写作时间
-date: 2023-11-29
+date: 2024-01-01
 # 一个页面可以有多个分类
 category:
   - 后端

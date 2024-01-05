@@ -30,12 +30,12 @@ star: true
 
 ## 技术框架
 
-- Spring Boot: 版本`2.7.17`
-- JDK: 版本`17`
-- SpringFox(Swagger): 版本`3.0.0`
-- Lombok: 版本`1.18.30`
-- spring-boot-starter-validation: 版本`2.7.17`
-- junit: 版本`4.13.2`
+- Spring Boot: 版本 `2.7.17`
+- JDK: 版本 `17`
+- SpringFox(Swagger): 版本 `3.0.0`
+- Lombok: 版本 `1.18.30`
+- spring-boot-starter-validation: 版本 `2.7.17`
+- Junit: 版本 `4.13.2`
 
 ## 依赖 `pom.xml`
 
